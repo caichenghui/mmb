@@ -3,7 +3,7 @@ $(function(){
 	$.ajax({
 		type:"get",
 		url:"http://mmb.ittun.com/api/getindexmenu",
-		datatype:"json",
+		datatype:"jsonp",
 		async:true,
 		success:function(data){
 			
@@ -25,7 +25,7 @@ $(function(){
 	$.ajax({
 		type:"get",
 		url:"http://mmb.ittun.com/api/getmoneyctrl",
-		datatype:"json",
+		datatype:"jsonp",
 		async:true,
 		success:function(data){
 			
