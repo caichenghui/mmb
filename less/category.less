@@ -1,0 +1,79 @@
+@charset "utf-8";
+
+.main {
+    background: #ededed;
+    padding: 5px;
+    width: 100%;
+    .main_ul {
+        background: #ededed;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        .div_list {
+            line-height: 40px;
+            font-size: 16px;
+            color: #000;
+            font-weight: bold;
+            border-bottom: 1px solid #ccc;
+            position: relative;
+            .a_list {
+                display: block;
+                padding-left: 16px;
+                height: 40px;
+                width: 100%;
+            }
+            .arrow {
+                position: absolute;
+                right: 20px;
+                top: 0;
+                display: block;
+                pointer-events: none;
+                /*点击后会有穿透效果，直接点击到他底下的元素*/
+                i {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    z-index: 10;
+                    background: #ededed;
+                    display: block;
+                    width: 25px;
+                    height: 14px;
+                }
+                .i2 {
+                    top: 24px;
+                    right: 0;
+                }
+                b {
+                    position: absolute;
+                    top: -5px;
+                    right: 0;
+                    font-size: 40px;
+                }
+            }
+            .table {
+                width: 100%;
+                background: #fff;
+                li {
+                    float: left;
+                    width: 33.3%;
+                    text-align: center;
+                    height: 40px;
+                    line-height: 40px;
+                    border-bottom: 1px solid #ccc;
+                    border-right: 1px solid #ccc;
+                    a {
+                        display: block;
+                        width: 100%;
+                        color: #333;
+                        font-size: 14px;
+                    }
+                }
+                li:nth-of-type(3n) {
+                    border-right: none;
+                }
+            }
+        }
+
+    }
+}
+
+/*category部分开始*/

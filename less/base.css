@@ -1,0 +1,352 @@
+@charset "utf-8";
+/*reset css  重置默认的一些样式 浏览器自带的  目的是保持各种终端显示一致*/
+/*所有的标签和伪类  before after*/
+*,
+::after,
+::before {
+  padding: 0;
+  margin: 0;
+  /*在移动端特殊的设置 */
+  /*点击高亮效果*/
+  -webkit-tap-highlight-color: transparent;
+  /*设置所有的盒子的宽度以边框开始计算*/
+  -webkit-box-sizing: border-box;
+  /*要兼容webket浏览器内核厂商  这种情况一般是老的移动端浏览器*/
+  box-sizing: border-box;
+}
+body {
+  font-size: 14px;
+  color: #000;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+  /*是设备默认的字体*/
+  background: #f7f7f7;
+}
+ol,
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  color: #333;
+  text-decoration: none;
+}
+input,
+textarea {
+  border: none;
+  outline: none;
+  resize: none;
+  /*特殊的属性定义  清楚浏览器给input自带的样式*/
+  -webkit-appearance: none;
+  /*组建默认的样式为空*/
+}
+/*common css  也就是我们共用的css*/
+.f_left {
+  float: left;
+}
+.f_right {
+  float: right;
+}
+.clearfix::after,
+.clearfix::before {
+  content: ".";
+  line-height: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+.top_5 {
+  top: 5px;
+}
+/*头部开始*/
+div.head {
+  height: 50px;
+  width: 100%;
+  background: #ff841d;
+  border-bottom: 1px solid #e6e6e6;
+}
+div.head a:nth-of-type(1) {
+  width: 240px;
+  height: 25px;
+  margin: 13px 0 0 12px;
+}
+div.head a:nth-of-type(1) img {
+  width: 185px;
+}
+div.head a:nth-of-type(2) {
+  width: 48px;
+  height: 48px;
+  margin-top: 10px;
+}
+div.head a:nth-of-type(2) img {
+  width: 34px;
+}
+.search {
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid #e6e6e6;
+}
+.search form {
+  display: block;
+  width: 90%;
+  height: 30px;
+  margin-top: 10px;
+  position: relative;
+  padding-left: 10px;
+  border: none;
+}
+.search form input:nth-of-type(1) {
+  display: block;
+  width: 100%;
+  height: 30px;
+  border-radius: 15px;
+  background: #f1f1f1;
+  padding-left: 5%;
+}
+.search form input:nth-of-type(2) {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 63px;
+  height: 30px;
+  border-radius: 15px;
+  background: #ff841d;
+}
+/*头部结束*/
+/*底部开始*/
+footer {
+  width: 100%;
+  background: #efefef;
+}
+footer .foot {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-top: none;
+  font-size: 12px;
+  padding: 10px 0;
+  text-align: center;
+}
+footer .foot .app {
+  color: red;
+}
+footer .foot .phone {
+  color: #333;
+}
+footer .foot span {
+  color: #333;
+}
+footer .foot p {
+  color: #333;
+  text-align: center;
+}
+footer > p {
+  margin-top: 10px;
+}
+footer > p .logn {
+  width: 30%;
+  border-right: none;
+}
+footer > p > a {
+  float: left;
+  display: inline-block;
+  border: 1px solid #ccc;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+}
+footer > p .signin {
+  width: 30%;
+  border-right: none;
+}
+footer > p .toTop {
+  width: 40%;
+}
+footer > p .toTop img {
+  width: 15px;
+  margin-right: 3px;
+}
+/*底部结束*/
+/*促销开始*/
+.cuxiao,
+.pinpai {
+  display: block;
+  width: 100%;
+  height: 36px;
+  background: #ff841d;
+}
+.cuxiao span,
+.pinpai span {
+  color: #fff;
+  line-height: 35px;
+  height: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  padding-left: 10px;
+}
+.cuxiao img,
+.pinpai img {
+  width: 20px;
+  float: right;
+  margin: 8px 10px 0 0;
+}
+/*促销结束*/
+/*三级菜单开始*/
+.main {
+  position: relative;
+  margin-bottom: 50px;
+}
+.main > .nav {
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 10px;
+  background: #ccc;
+}
+.main > .nav a {
+  display: inline-block;
+}
+.main > .nav button {
+  height: 30px;
+  width: 40px;
+  margin-top: 5px;
+  line-height: 30px;
+  border-radius: 5px;
+}
+.main .page {
+  width: 100%;
+  margin: 20px 0;
+  height: 34px;
+  text-align: center;
+  position: absolute;
+  bottom: -50px;
+}
+.main .page button {
+  float: left;
+  width: 33%;
+  height: 34px;
+  border-radius: 5px;
+}
+.main .page ul {
+  float: left;
+  width: 33%;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  background: #fff;
+}
+.main .page ul li {
+  text-align: center;
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  z-index: 10;
+}
+.pro_list {
+  width: 100%;
+}
+.pro_list li {
+  margin: 0;
+  padding: 10px 8px;
+  width: 100%;
+}
+.pro_list li a.media_list {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.media-left > img {
+  display: block;
+  width: 120px;
+  height: 120px;
+}
+.media-body .p1 {
+  color: #333333;
+  word-break: break-all;
+  font-size: 15px;
+  line-height: 28px;
+  height: 56px;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+}
+.media-body .p2 {
+  color: #ed0000;
+  font-size: 18px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+.media-body .p3 {
+  color: #a1a1a1;
+  line-height: 21px;
+}
+/*三级菜单结束*/
+/*页面加载动画开始*/
+.spinner {
+  margin: 100px auto;
+  width: 50px;
+  height: 60px;
+  text-align: center;
+  font-size: 10px;
+  position: fixed;
+  right: 0;
+  left: 0;
+}
+.spinner > div {
+  background-color: #67CF22;
+  height: 100%;
+  width: 6px;
+  display: inline-block;
+  -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
+  animation: stretchdelay 1.2s infinite ease-in-out;
+}
+.spinner .rect2 {
+  -webkit-animation-delay: -1.1s;
+  animation-delay: -1.1s;
+}
+.spinner .rect3 {
+  -webkit-animation-delay: -1s;
+  animation-delay: -1s;
+}
+.spinner .rect4 {
+  -webkit-animation-delay: -0.9s;
+  animation-delay: -0.9s;
+}
+.spinner .rect5 {
+  -webkit-animation-delay: -0.8s;
+  animation-delay: -0.8s;
+}
+@-webkit-keyframes stretchdelay {
+  0%,
+  100%,
+  40% {
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    -webkit-transform: scaleY(1);
+  }
+}
+@keyframes stretchdelay {
+  0%,
+  100%,
+  40% {
+    transform: scaleY(0.4);
+    -webkit-transform: scaleY(0.4);
+  }
+  20% {
+    transform: scaleY(1);
+    -webkit-transform: scaleY(1);
+  }
+}
+/*页面加载动画结束*/
