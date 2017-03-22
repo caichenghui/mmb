@@ -1,0 +1,189 @@
+@charset "utf-8";
+div.head {
+  position: relative;
+}
+div.head a.f_right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+div.head a.f_left {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  text-align: center;
+  line-height: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+  font-family: "宋体";
+  z-index: 10;
+}
+div.head h1 {
+  /*float: left;*/
+  width: 100%;
+  /*padding: 0 50px;*/
+  margin: 0 -50px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 50px;
+  color: #fff;
+  font-weight: bold;
+}
+.media a .media-body .p1 span {
+  color: #ff6c00;
+}
+.media a .media-body .p2 {
+  font-size: 12px;
+  color: #a1a1a1;
+  margin-top: 20px;
+}
+.media a .media-body .p2 span {
+  float: right;
+}
+/*商品详情main*/
+.main {
+  width: 100%;
+  padding: 10px;
+  background: #fff;
+}
+.main h3 {
+  font-size: 18px;
+  margin: 10px auto 5px;
+  font-weight: 800;
+  text-align: left;
+  color: #5a5a5a;
+}
+.main h4 {
+  color: #ff6c00;
+  display: block;
+  font-size: 15px;
+}
+.main .p1 {
+  margin: 10px 0;
+}
+.main .p1 span {
+  color: #999;
+  margin: 0 4px;
+}
+.main .p1 .p2 {
+  overflow: hidden;
+  line-height: 24px;
+  font-size: 16px;
+  color: #606060;
+  margin: 20px auto 6px;
+}
+.main .p1 .p3 {
+  margin: 50px auto;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  background: #ff9000;
+}
+.main .p1 .p3 a {
+  display: inline-block;
+  width: 100%;
+  color: #fff;
+}
+.main .p1 .p3 a i {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+.main .p1 span.pj {
+  color: #4682c5;
+}
+.main .cont_top {
+  margin-top: 20px;
+}
+.main .cont_top p {
+  overflow: hidden;
+  line-height: 24px;
+  font-size: 16px;
+  color: #606060;
+  margin: 6px auto;
+}
+.main .cont_top img {
+  float: right;
+  width: 120px;
+  display: block;
+  margin: 0 10px;
+}
+.main .bgimg {
+  max-width: 100%;
+  display: block;
+  margin: 30px auto;
+}
+.main .list {
+  width: 150px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  margin: 0 auto;
+  text-align: left;
+}
+.main .list li {
+  width: 100%;
+  border-bottom: 1px dashed #ccc;
+}
+.main .list li span strong {
+  float: right;
+  color: #ff841d;
+}
+.main .tit {
+  font-size: 16px;
+  padding: 6px 8px;
+}
+.main .cu-content-pl .list {
+  width: 100%;
+  margin-top: 50px;
+}
+.main .cu-content-pl .list ul {
+  width: 100%;
+  padding: 10px;
+}
+.main .cu-content-pl .list ul li {
+  margin: 10px 0;
+}
+.main .cu-content-pl .list ul li .userimg {
+  float: left;
+}
+.main .cu-content-pl .list ul li .userimg img {
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.main .cu-content-pl .list ul li .con {
+  overflow: hidden;
+}
+.main .cu-content-pl .list ul li .con .name div:first-child {
+  color: #5997c0;
+  float: left;
+}
+.main .cu-content-pl .list ul li .con .name div:last-child {
+  float: right;
+  color: #999;
+}
+.main .cu-content-pl .list ul li .con .content {
+  color: #606060;
+  margin-top: 5px;
+}
+.main .cont_mid .form {
+  width: 100%;
+  border: 1px solid #ccc;
+  padding-bottom: 40px;
+  margin-bottom: -40px;
+}
+.main .cont_mid .form textarea {
+  width: 100%;
+}
+.main .cont_mid .form .ctrl input {
+  float: right;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  color: #fff;
+  background: #ff841d;
+}
+/*商品详情main*/

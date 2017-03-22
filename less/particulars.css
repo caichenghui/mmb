@@ -1,0 +1,142 @@
+@charset "utf-8";
+.content {
+  width: 100%;
+}
+.content .top {
+  width: 100%;
+  padding: 10px 10px 0;
+  background: #fff;
+  position: relative;
+}
+.content .top .img > img {
+  display: block;
+  margin: 10px auto;
+  width: 160px;
+}
+.content .top .img a {
+  display: block;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+}
+.content .top .img a img {
+  display: block;
+  width: 39px;
+}
+.content .top .p1 {
+  font-size: 16px;
+  text-align: left;
+  margin: 10px 0;
+}
+.content .top .ul1 {
+  width: 100%;
+}
+.content .top .ul1 li {
+  float: left;
+  width: 50%;
+}
+.content .top .ul1 .mall {
+  height: 24px;
+  line-height: 24px;
+}
+.content .top .ul1 .price {
+  height: 24px;
+  line-height: 24px;
+}
+.content .top .ul1 .price span {
+  color: #fe0000;
+}
+.content .top .ul1 .comment,
+.content .top .ul1 .sales {
+  color: #a1a1a1;
+  height: 24px;
+  line-height: 24px;
+}
+.content .mid {
+  margin-top: 20px;
+  width: 100%;
+}
+.content .mid .tab {
+  width: 100%;
+}
+.content .mid .tab li {
+  float: left;
+  width: 33%;
+  height: 34px;
+  line-height: 34px;
+  text-align: center;
+  color: #fff;
+  background: #fb0;
+  border: 1px solid #c14d00;
+}
+.content .mid .tab li.active {
+  background: #f90;
+}
+.content .mid .tab li.cur,
+.content .mid .tab li.pj {
+  border-left: none;
+  border-right: none;
+}
+.content .mid div:nth-of-type(1) {
+  width: 100%;
+  margin-top: 12px;
+  height: 33px;
+  line-height: 33px;
+  border-bottom: 1px solid #ccc;
+}
+.content .mid div.div_pj {
+  /*padding: 10px;*/
+  width: 100%;
+}
+.content .mid div.div_pj .div_wypj {
+  width: 100%;
+  background: #dbdbdb;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+}
+.content .mid div.div_pj .ul_wypj {
+  padding: 10px;
+  width: 100%;
+}
+.content .mid div.div_pj .ul_wypj li {
+  width: 100%;
+}
+.content .mid div.div_pj .ul_wypj li .p1 {
+  height: 18px;
+  line-height: 18px;
+  color: #999;
+  font-size: 14px;
+}
+.content .mid div.div_pj .ul_wypj li .p1 span:first-child {
+  float: left;
+}
+.content .mid div.div_pj .ul_wypj li .p1 span:last-child {
+  float: right;
+}
+.content .mid div.div_pj .ul_wypj li .p2 {
+  height: 18px;
+  line-height: 18px;
+  color: #999;
+  text-align: right;
+  font-size: 14px;
+}
+.content .mid div.div_pj .ul_wypj li .p3 {
+  color: #000;
+  font-size: 14px;
+  line-height: 22px;
+  padding-top: 5px;
+  margin-bottom: 40px;
+}
+.content .mid div.div_pj .ckpj {
+  width: 100%;
+  padding: 10px;
+}
+.content .mid div.div_pj .ckpj p {
+  width: 100%;
+  border: 1px solid #ccc;
+  height: 33px;
+  line-height: 33px;
+  background: #d4d4d4;
+  text-align: center;
+}
